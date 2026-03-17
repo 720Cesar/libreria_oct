@@ -1,0 +1,161 @@
+body{
+
+    background:#e6b875;
+    font-family:Arial;
+    margin:0;
+
+}
+
+.app{
+
+    display:flex;
+    background:#e8dcc4;
+    margin:40px;
+    border-radius:30px;
+    overflow:hidden;
+
+}
+
+.sidebar{
+
+    width:220px;
+    padding:40px 30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    position: sticky;
+
+}
+
+.sidebar nav{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+.sidebar a{
+
+    text-decoration:none;
+    color:#5a4a3a;
+
+}
+
+.logo{
+
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+.topbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 40px;
+
+}
+
+.menu-links{
+
+    display:flex;
+    gap:30px;
+
+}
+
+.menu-links a{
+    padding:10px 20px;
+}
+
+.menu-links :hover{
+
+    background:#f7a52c;
+    border-radius:20px;
+    color:white;
+
+}
+
+
+.hero{
+
+    background:#eee4d8;
+    margin:20px 40px;
+    padding:40px;
+    border-radius:25px;
+    gap: 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.hero-text h1{
+
+    font-size:42px;
+    color:#5b4536;
+
+}
+
+.hero-text p{
+
+    color:#9a8b7c;
+    max-width:250px;
+
+}
+
+.cta{
+
+    background:#f7a52c;
+    border:none;
+    padding:12px 25px;
+    border-radius:20px;
+    color:white;
+    margin-top:15px;
+
+}
+
+.books{
+
+    display:flex;
+    gap:40px;
+
+}
+
+.book{
+
+    width:120px;
+
+}
+
+.book img{
+
+    width:100%;
+    border-radius:6px;
+
+}
+
+.book h4{
+
+    font-size:14px;
+    margin:8px 0 4px;
+
+}
+
+.book p{
+
+    font-size:12px;
+    color:#777;
+
+}
+
+.placeholder{
+
+    width:120px;
+    height:180px;
+    background:#ccc;
+    border-radius:6px;
+
+}

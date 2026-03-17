@@ -101,18 +101,25 @@ class LibroController extends Controller
 
     // CONSULTAR LIBROS DE API
     public function home(){
+
+        // LIBROS DE HISTORIA
         // Se maneja la respuesta con la URL base de la API
-        $response = Http::get('https://www.googleapis.com/books/v1/volumes', [
+        $history = Http::get('https://www.googleapis.com/books/v1/volumes', [
             // Se incluyen los parámetros de la consulta a la API con GET
-            'q' => 'subject:fiction',
-            'maxResults' => 12,
+            'q' => 'subject:history',
+            'maxResults' => 5,
             'key' => config('services.google_books.key')
-        ]);
+        ])->json()['items'] ?? [];
 
-        // En una variable se guarda el resultado JSON
-        // ['items'] hace referencia a las propiedades del libro
-        $libros = $response->json()['items'] ?? [];
+        // LIBROS DE FANTASÍA
+        // Se maneja la respuesta con la URL base de la API
+        $fantasy = Http::get('https://www.googleapis.com/books/v1/volumes', [
+            // Se incluyen los parámetros de la consulta a la API con GET
+            'q' => 'subject:fantasy',
+            'maxResults' => 5,
+            'key' => config('services.google_books.key')
+        ]) ->json()['items'] ?? [];;
 
-        return view('libros.home', compact('libros')); 
+        return view('libros.home', compact('history', 'fantasy')); 
     }
 }
