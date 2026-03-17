@@ -81,10 +81,10 @@
 
             <div class="hero-text">
 
-                <h1>EXPLORA LA<br>HISTORIA</h1>
+                <h1>VIVE HISTORIAS <br> FANTÁSTICAS</h1>
                 <p>
                 Explora libros que te permitan
-                vivir relatos históricos.
+                explorar mundos increíbles.
                 </p>
                 <button class="cta">
                 Ver más
